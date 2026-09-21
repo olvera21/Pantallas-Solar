@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Casa familiar con cochera doble">
+  <rect width="800" height="600" fill="#FEFEE3"/>
+  <circle cx="700" cy="100" r="44" fill="#C9E8A0"/>
+  <rect x="0" y="450" width="800" height="150" fill="#E3ECC9"/>
+
+  <!-- driveway -->
+  <polygon points="230,600 570,600 470,450 330,450" fill="#DCDCD5" stroke="#D3D3CC" stroke-width="3"/>
+
+  <!-- house main body -->
+  <rect x="150" y="240" width="330" height="210" fill="#FFFFFF" stroke="#15171A" stroke-width="6"/>
+  <polygon points="130,240 315,140 500,240" fill="#15171A"/>
+
+  <!-- living room window -->
+  <rect x="180" y="270" width="80" height="70" fill="#FEFEE3" stroke="#15171A" stroke-width="5"/>
+  <line x1="220" y1="270" x2="220" y2="340" stroke="#15171A" stroke-width="4"/>
+  <line x1="180" y1="305" x2="260" y2="305" stroke="#15171A" stroke-width="4"/>
+  <!-- front door -->
+  <rect x="300" y="350" width="60" height="100" fill="#6FA23C"/>
+  <circle cx="350" cy="400" r="4" fill="#FEFEE3"/>
+  <!-- second window -->
+  <rect x="395" y="280" width="60" height="60" fill="#FEFEE3" stroke="#15171A" stroke-width="5"/>
+
+  <!-- double garage attached -->
+  <rect x="480" y="330" width="220" height="120" fill="#FFFFFF" stroke="#15171A" stroke-width="6"/>
+  <polygon points="465,330 590,265 715,330" fill="#15171A"/>
+  <rect x="500" y="370" width="85" height="80" fill="#15171A"/>
+  <rect x="595" y="370" width="85" height="80" fill="#15171A"/>
+  <line x1="500" y1="390" x2="585" y2="390" stroke="#FEFEE3" stroke-width="3"/>
+  <line x1="500" y1="410" x2="585" y2="410" stroke="#FEFEE3" stroke-width="3"/>
+  <line x1="500" y1="430" x2="585" y2="430" stroke="#FEFEE3" stroke-width="3"/>
+  <line x1="595" y1="390" x2="680" y2="390" stroke="#FEFEE3" stroke-width="3"/>
+  <line x1="595" y1="410" x2="680" y2="410" stroke="#FEFEE3" stroke-width="3"/>
+  <line x1="595" y1="430" x2="680" y2="430" stroke="#FEFEE3" stroke-width="3"/>
+
+  <!-- car silhouette on driveway -->
+  <g>
+    <rect x="350" y="500" width="120" height="45" rx="14" fill="#15171A"/>
+    <rect x="370" y="478" width="80" height="35" rx="10" fill="#15171A"/>
+    <circle cx="378" cy="548" r="16" fill="#5B5E5A"/>
+    <circle cx="442" cy="548" r="16" fill="#5B5E5A"/>
+  </g>
+
+  <!-- small tree -->
+  <rect x="80" y="400" width="12" height="60" fill="#15171A"/>
+  <circle cx="86" cy="370" r="36" fill="#9DBD62"/>
+</svg>

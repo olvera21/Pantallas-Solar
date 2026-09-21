@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estimación orientativa — Solar</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <svg class="logo-mark" viewBox="0 0 40 40" fill="none">
+        <path d="M20 4C10 8 6 19 10 29C14 37 26 37 30 29C34 19 30 8 20 4Z" fill="#15171A"/>
+        <path d="M20 8V32" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-word">Solar</span>
+    </a>
+    <nav class="main-nav">
+      <a href="catalogo.html">Catálogo</a>
+      <a href="publicar.html" class="active">Publicar inmueble</a>
+      <a href="perfil.html">Perfil</a>
+    </nav>
+    <div class="header-actions">
+      <button class="nav-toggle" aria-label="Abrir menú"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="section-tight">
+  <div class="container" style="max-width:720px;">
+
+    <p style="font-size:0.85rem; margin-bottom:10px; font-weight:600;"><a href="publicar-revision.html" style="color:var(--ink-faint); text-decoration:none;">Revisión</a> / Estimación orientativa</p>
+    <h1 style="font-size:1.9rem; margin-bottom:32px;">Estimación orientativa de precio</h1>
+
+    <div class="estimation-loading">
+      <div class="pulse"></div>
+      <p style="margin:0 auto;">Analizando superficie, ubicación, servicios y propiedades similares en la zona…</p>
+    </div>
+
+    <div class="estimation-result">
+
+      <div class="price-block">
+        <span class="hero-eyebrow">Referencia generada con apoyo de inteligencia artificial</span>
+        <div class="price-range">$1,180,000 – $1,340,000</div>
+        <p>Rango orientativo para tu casa de 280 m² de terreno y 160 m² construidos en zona residencial, Tula de Allende. Esta referencia no es obligatoria: tú decides el precio final.</p>
+      </div>
+
+      <h3>Factores considerados</h3>
+      <ul class="factor-list">
+        <li class="factor-row">
+          <span class="factor-name">Superficie de terreno</span>
+          <span class="factor-bar-track"><span class="factor-bar-fill" style="width:88%;"></span></span>
+          <span class="factor-value">Alto</span>
+        </li>
+        <li class="factor-row">
+          <span class="factor-name">Ubicación y zona</span>
+          <span class="factor-bar-track"><span class="factor-bar-fill" style="width:80%;"></span></span>
+          <span class="factor-value">Alto</span>
+        </li>
+        <li class="factor-row">
+          <span class="factor-name">Metros construidos</span>
+          <span class="factor-bar-track"><span class="factor-bar-fill" style="width:68%;"></span></span>
+          <span class="factor-value">Medio</span>
+        </li>
+        <li class="factor-row">
+          <span class="factor-name">Propiedades similares</span>
+          <span class="factor-bar-track"><span class="factor-bar-fill" style="width:60%;"></span></span>
+          <span class="factor-value">Medio</span>
+        </li>
+        <li class="factor-row">
+          <span class="factor-name">Servicios disponibles</span>
+          <span class="factor-bar-track"><span class="factor-bar-fill" style="width:40%;"></span></span>
+          <span class="factor-value">Bajo</span>
+        </li>
+        <li class="factor-row">
+          <span class="factor-name">Antigüedad y estado</span>
+          <span class="factor-bar-track"><span class="factor-bar-fill" style="width:35%;"></span></span>
+          <span class="factor-value">Bajo</span>
+        </li>
+      </ul>
+
+      <h3>¿Qué precio quieres publicar?</h3>
+      <div class="estimation-choice">
+        <label class="choice-card selected">
+          <input type="radio" name="precio-final" checked>
+          <strong>Usar la referencia sugerida</strong>
+          <p style="margin-top:8px; margin-bottom:0;">Se publicará en $1,260,000, el punto medio del rango estimado.</p>
+        </label>
+        <label class="choice-card">
+          <input type="radio" name="precio-final">
+          <strong>Definir mi propio precio</strong>
+          <div class="field" style="margin-top:10px; margin-bottom:0;">
+            <input type="text" placeholder="Escribe tu precio">
+          </div>
+        </label>
+      </div>
+
+      <div class="step-actions">
+        <a href="publicar-revision.html" class="btn btn-outline">Modificar datos del inmueble</a>
+        <a href="catalogo.html" class="btn btn-primary">Publicar inmueble</a>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <svg class="logo-mark" viewBox="0 0 40 40" fill="none">
+          <path d="M20 4C10 8 6 19 10 29C14 37 26 37 30 29C34 19 30 8 20 4Z" fill="#15171A"/>
+          <path d="M20 8V32" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-word">Solar</span>
+      </a>
+      <p>Fichas técnicas claras para cada terreno y casa en Tula de Allende, Jilotepec y zonas cercanas.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5C13 6.4 13.4 6 14.7 6H17V2.2C16.6 2.1 15.4 2 14 2 11.2 2 9 3.7 9 6.9V10H6v4h3v8h4Z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="#" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.6 14.2c-.2.6-1.3 1.2-1.9 1.3-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1.1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5.2.6.7 1.9.8 2 .1.2.1.4 0 .6-.1.2-.2.4-.4.6-.2.2-.4.4-.2.8.2.4.9 1.5 2 2.4 1.3 1.1 2.4 1.5 2.8 1.6.4.1.6.1.8-.1.2-.2.9-1 1.1-1.4.2-.4.5-.3.8-.2.3.1 2 1 2.3 1.1.3.2.5.3.6.4.1.2.1.9-.1 1.5Z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Explorar</h5>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="publicar.html">Publicar inmueble</a>
+      <a href="estimacion.html">Estimación de precio</a>
+    </div>
+    <div class="footer-col">
+      <h5>Cuenta</h5>
+      <a href="perfil.html">Mi perfil</a>
+      <a href="login.html">Iniciar sesión</a>
+    </div>
+    <div class="footer-col">
+      <h5>Contacto</h5>
+      <a href="mailto:hola@solar.mx">hola@solar.mx</a>
+      <a href="tel:7710000000">771 000 0000</a>
+      <span>Tula de Allende, Hgo.</span>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 Solar · Proyecto académico · Programación de Aplicaciones Web Progresivas · UTTT</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

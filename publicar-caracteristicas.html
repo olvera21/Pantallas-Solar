@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Publicar · Características — Solar</title>
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-requires-auth>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <svg class="logo-mark" viewBox="0 0 40 40" fill="none">
+        <path d="M20 4C10 8 6 19 10 29C14 37 26 37 30 29C34 19 30 8 20 4Z" fill="#15171A"/>
+        <path d="M20 8V32" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-word">Solar</span>
+    </a>
+    <nav class="main-nav">
+      <a href="catalogo.html">Catálogo</a>
+      <a href="publicar.html" class="active">Publicar inmueble</a>
+      <a href="perfil.html">Perfil</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#" class="btn btn-outline btn-sm">Guardar borrador</a>
+      <button class="nav-toggle" aria-label="Abrir menú"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<section class="section-tight">
+  <div class="container" style="max-width:720px;">
+
+    <div class="section-head" style="margin-bottom:26px;">
+      <h1 style="font-size:1.9rem;">Registrar un inmueble</h1>
+      <p>Paso 4 de 6. Describe la propiedad y marca los servicios disponibles.</p>
+    </div>
+
+    <div class="progress-trail">
+      <a href="publicar-ubicacion.html" class="trail-step done"><span class="trail-num">1</span>Ubicación</a>
+      <a href="publicar-dimensiones.html" class="trail-step done"><span class="trail-num">2</span>Dimensiones</a>
+      <a href="publicar-legal.html" class="trail-step done"><span class="trail-num">3</span>Legal y precio</a>
+      <a href="publicar-caracteristicas.html" class="trail-step current"><span class="trail-num">4</span>Características</a>
+      <a href="publicar-fotos.html" class="trail-step"><span class="trail-num">5</span>Fotografías</a>
+      <a href="publicar-revision.html" class="trail-step"><span class="trail-num">6</span>Revisión</a>
+    </div>
+
+    <form onsubmit="return false;">
+      <div class="card">
+        <h3>Características y servicios</h3>
+        <p class="field-hint" id="nota-terreno" style="display:none; margin-bottom:20px;">Como registraste un terreno sin construcción, no se piden recámaras, baños ni estado de construcción.</p>
+        <div id="campo-habitabilidad">
+          <div class="field-row">
+            <div class="field">
+              <label for="p-rec">Recámaras</label>
+              <input type="text" id="p-rec" placeholder="Ej. 3">
+            </div>
+            <div class="field">
+              <label for="p-banos">Baños</label>
+              <input type="text" id="p-banos" placeholder="Ej. 2.5">
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="p-estac">Estacionamiento (autos)</label>
+              <input type="text" id="p-estac" placeholder="Ej. 2">
+            </div>
+            <div class="field">
+              <label for="p-estado">Estado general</label>
+              <select id="p-estado">
+                <option>Nuevo</option>
+                <option>Bueno</option>
+                <option>Requiere mantenimiento</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <label>Servicios disponibles</label>
+          <div class="checkbox-row"><input type="checkbox" id="s1" checked><label for="s1">Agua potable</label></div>
+          <div class="checkbox-row"><input type="checkbox" id="s2" checked><label for="s2">Energía eléctrica</label></div>
+          <div class="checkbox-row"><input type="checkbox" id="s3"><label for="s3">Drenaje</label></div>
+          <div class="checkbox-row"><input type="checkbox" id="s4"><label for="s4">Internet disponible en la zona</label></div>
+        </div>
+        <div class="field" style="margin-bottom:0;">
+          <label for="p-desc">Descripción adicional</label>
+          <textarea id="p-desc" rows="4" placeholder="Detalles que ayuden a describir la propiedad"></textarea>
+        </div>
+      </div>
+
+      <div class="step-actions">
+        <a href="publicar-legal.html" class="btn btn-outline" id="link-anterior">Anterior</a>
+        <a href="publicar-fotos.html" class="btn btn-primary" id="link-continuar">Continuar</a>
+      </div>
+    </form>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="index.html" class="logo">
+        <svg class="logo-mark" viewBox="0 0 40 40" fill="none">
+          <path d="M20 4C10 8 6 19 10 29C14 37 26 37 30 29C34 19 30 8 20 4Z" fill="#15171A"/>
+          <path d="M20 8V32" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-word">Solar</span>
+      </a>
+      <p>Fichas técnicas claras para cada terreno y casa en Tula de Allende, Jilotepec y zonas cercanas.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M13 22v-8h3l1-4h-4V7.5C13 6.4 13.4 6 14.7 6H17V2.2C16.6 2.1 15.4 2 14 2 11.2 2 9 3.7 9 6.9V10H6v4h3v8h4Z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="#" aria-label="WhatsApp"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.6 14.2c-.2.6-1.3 1.2-1.9 1.3-.5.1-1.1.1-1.8-.1-.4-.1-1-.3-1.7-.6-3-1.3-4.9-4.3-5.1-4.5-.1-.2-1.2-1.6-1.2-3.1s.8-2.2 1.1-2.5c.3-.3.6-.4.8-.4h.6c.2 0 .4 0 .6.5.2.6.7 1.9.8 2 .1.2.1.4 0 .6-.1.2-.2.4-.4.6-.2.2-.4.4-.2.8.2.4.9 1.5 2 2.4 1.3 1.1 2.4 1.5 2.8 1.6.4.1.6.1.8-.1.2-.2.9-1 1.1-1.4.2-.4.5-.3.8-.2.3.1 2 1 2.3 1.1.3.2.5.3.6.4.1.2.1.9-.1 1.5Z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Explorar</h5>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="publicar.html">Publicar inmueble</a>
+      <a href="estimacion.html">Estimación de precio</a>
+    </div>
+    <div class="footer-col">
+      <h5>Cuenta</h5>
+      <a href="perfil.html">Mi perfil</a>
+      <a href="login.html">Iniciar sesión</a>
+    </div>
+    <div class="footer-col">
+      <h5>Contacto</h5>
+      <a href="mailto:hola@solar.mx">hola@solar.mx</a>
+      <a href="tel:7710000000">771 000 0000</a>
+      <span>Tula de Allende, Hgo.</span>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 Solar · Proyecto académico · Programación de Aplicaciones Web Progresivas · UTTT</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

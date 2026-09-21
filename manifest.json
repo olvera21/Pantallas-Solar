@@ -1,0 +1,10 @@
+{
+  "name": "Solar — Bienes raíces con ficha técnica",
+  "short_name": "Solar",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#FAFCF8",
+  "theme_color": "#1E5A34",
+  "description": "Publicaciones inmobiliarias con ficha técnica y estimación orientativa de precio asistida por IA.",
+  "icons": []
+}
